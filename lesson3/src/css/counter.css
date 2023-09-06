@@ -1,0 +1,17 @@
+.blue{
+    background-color: darkcyan;
+    color: aliceblue;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 867px;
+}
+
+.box{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 65px;
+    padding-top: 10px;
+}
