@@ -1,0 +1,25 @@
+.team-info {
+    background-color: #f2f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .team-info h3 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .team-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .team-info li {
+    font-size: 16px;
+    margin: 5px;
+  }

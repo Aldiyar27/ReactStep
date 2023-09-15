@@ -1,0 +1,24 @@
+.achievements {
+    background-color: #f2f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .achievements h3 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .achievements h4 {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .achievements p {
+    margin: 10px 0;
+    font-size: 16px;
+  }

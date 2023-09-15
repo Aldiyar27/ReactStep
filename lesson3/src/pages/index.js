@@ -22,9 +22,17 @@ const Main = () => {
     const [server, setServer] = useState(4500)
     const [serverUp, setServerUp] = useState(1)
 
-    function clickMe(amount){
-        setCount(count + amount)
+    useEffect(() => {
+        const count = localStorage.getItem("record");
+        if(count){
+            setCount(count);
+        }
+    });
 
+    function clickMe(){
+        let record = Number(count) + Number(num)
+        localStorage.setItem("record", record);
+        setCount(record)
     }
 
     function Button(props){
@@ -43,6 +51,9 @@ const Main = () => {
     function openNav() {
         document.getElementById("mySidepanel").style.height = "600px";
         document.querySelector(".closebtn").style.display = 'block';
+        // if(count >= 10){
+        //     document.getElementById("1").disabled = false;
+        // }
     }
       
       /* Установите ширину боковой панели в 0 (скройте ее) */
@@ -188,11 +199,11 @@ const Main = () => {
             <Button amount={num}/>
             <div id="mySidepanel" class="sidepanel">
                 <a class="closebtn" onClick={() => closeNav()}>&times;</a>
-                <button id="1" className='button-menu' onClick={() => Clicker(1)}>Clicker - {clicker}$ - {clickerUp} lvl</button>
-                <button id="2" className='button-menu' onClick={() => Clicker(2)}>Phone - {phone}$ - {phoneUp} lvl</button>
-                <button id="3" className='button-menu' onClick={() => Clicker(3)}>Old Computer - {comp}$ - {compUp} lvl</button>
-                <button id="4" className='button-menu' onClick={() => Clicker(4)}>Laptop - {lap}$ - {lapUp} lvl</button>
-                <button id="5" className='button-menu' onClick={() => Clicker(5)}>Server - {server}$ - {serverUp} lvl</button>
+                <button  id="1" className='button-menu' onClick={() => Clicker(1)}>Clicker - {clicker}$ - {clickerUp} lvl</button>
+                <button  id="2" className='button-menu' onClick={() => Clicker(2)}>Phone - {phone}$ - {phoneUp} lvl</button>
+                <button  id="3" className='button-menu' onClick={() => Clicker(3)}>Old Computer - {comp}$ - {compUp} lvl</button>
+                <button  id="4" className='button-menu' onClick={() => Clicker(4)}>Laptop - {lap}$ - {lapUp} lvl</button>
+                <button  id="5" className='button-menu' onClick={() => Clicker(5)}>Server - {server}$ - {serverUp} lvl</button>
             </div>
             <button class="openbtn" onClick={() => openNav()}> <div className='text'>&#9776; Магазин </div></button>
         </div> 
