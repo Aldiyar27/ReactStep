@@ -3,7 +3,7 @@ import '../css/TeamInfo.css';
 
 class TeamInfo extends React.Component {
   render() {
-    const { players, photo} = this.props;
+    const {players} = this.props;
 
     return (
       <div className='team'>

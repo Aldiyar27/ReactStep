@@ -5,6 +5,7 @@ import ClubInfo from './pages/ClubInfo.js';
 import Achievements from './pages/Achievements.js';
 import TeamInfo from './pages/TeamInfo.js';
 import Main from './pages/main.js';
+import ChooseTeam from './pages/ChooseTeam.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/achiev" element={<Achievements/>}/>
         <Route exact path="/team" element={<TeamInfo/>}/>
         <Route exact path="/main" element={<Main/>}/>
+        <Route exact path="" element={<ChooseTeam/>}/>
       </Routes>
     </Router>
   );

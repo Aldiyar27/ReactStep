@@ -5,6 +5,11 @@
     border-radius: 5px;
     text-align: center;
 }
+
+.club-info img {
+    width: 150px;
+    height: 150px;
+}
   
 .club-info h2 {
     color: #333;

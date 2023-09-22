@@ -1,0 +1,17 @@
+.main{
+    background-color: #f2f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons button{
+    margin-left: 10px;
+    margin-right: 6px;
+    background-color: white;
+    border: solid 1 black;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
